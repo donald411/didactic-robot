@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+
+<style>
+	* {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	}
+	div.Outline {
+		margin: 0 auto;	 align: center;
+		text-align: center;
+		box-sizing: border-box; 
+	}
+	div.title01	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 25px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:orange solid 15px;				/* 왼쪽 Bar */
+		background-color: #666;						/* 배경색 */
+		color: #fff;								/* 글짜색 */
+		text-shadow: 3px 3px black;
+	}
+	div.title02	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 22px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:#D14F52 solid 10px;				/* 왼쪽 Bar */
+		background-color: #005D7A;					/* 배경색 */
+		color: #fff;								/* 글짜색 */
+
+		text-shadow: 3px 3px black;
+	}
+	div.title03	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 22px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:#BDBFC9 solid 10px;				/* 왼쪽 Bar */
+		background-color: #6B2936;					/* 배경색 */
+		color: #fff;								/* 글짜색 */
+
+		text-shadow: 3px 3px black;
+	}
+	div.title04	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 22px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:#B9FEFC solid 10px;				/* 왼쪽 Bar */
+		background-color: #28A2B7;					/* 배경색 */
+		color: #fff;								/* 글짜색 */
+
+		text-shadow: 3px 3px black;
+	}
+	div.title05	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 22px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:#F4BC22 solid 10px;				/* 왼쪽 Bar */
+		background-color: #513AD1;					/* 배경색 */
+		color: #fff;								/* 글짜색 */
+
+		text-shadow: 3px 3px black;
+	}
+	div.title06	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 22px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:#DBF4A7 solid 10px;				/* 왼쪽 Bar */
+		background-color: #53354A;					/* 배경색 */
+		color: #fff;								/* 글짜색 */
+
+		text-shadow: 3px 3px black;
+	}
+	div.title07	{
+		width: auto;
+		text-align: left;	font-weight: bold;	font-family: verdana;	font-size: 22px; 
+		padding: 10px 15px; margin-bottom: 30px; 
+		border-left:#F7A122 solid 10px;				/* 왼쪽 Bar */
+		background-color: #CC242C;					/* 배경색 */
+		color: #fff;								/* 글짜색 */
+
+		text-shadow: 3px 3px black;
+	}
+	div.Opt01	{ /* 현재는 안쓰임 */
+		font-size: 18px; color: orange; text-shadow: 1px 1px black; opacity: 1; border: gray solid 1px;
+		text-align: left;	font-weight: bold;	font-family: verdana;
+		padding: 10px 20px; margin-bottom: 30px; 
+		color: orange;; 
+	}
+	fieldset.bulletin {
+		margin: 0 auto;
+		text-align: left;
+		padding:15px;
+		font-size: 18px;
+		-webkit-padding-after: 30px;
+		line-height: 160%;
+		border: gray solid 1px; background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/brillant.png);
+	}
+	fieldset.round-box {
+		margin: 0 auto;
+		text-align: left;
+		border:1px solid black;
+		padding:15px;
+		border-radius:10px;
+		font-size: 16px;
+		-webkit-padding-after: 30px; 
+	}
+	span.stars {
+		color: Gold;
+		text-shadow: 2px 2px 2px black;
+		font-size: 1.5em;
+	}
+	div.imgsrc01 {
+	width:100%; height:auto; 
+	border: 1px solid silver; 
+	float:left; 
+	box-sizing: border-box; 
+	margin: 2px 2px; 
+	padding: 0px 0px;		
+	}
+	div.imgsrc02 {
+	width:48%; height:auto; 
+	border: 1px solid silver; 
+	float:left; 
+	box-sizing: border-box; 
+	margin: 2px 2px; 
+	padding: 0px 0px;		
+	}
+	div.imgsrc03 {
+		width:32%; height:auto; 
+		border: 1px solid silver; 
+		float:left; 
+		box-sizing: border-box; 
+		margin: 2px 2px; 
+		padding: 0px 0px;		
+	}
+	p.field {
+		-webkit-margin-before: 0em; -webkit-margin-after: 0em; font-size: 20px; color: #ee8318; font-weight: bold; vertical-align = mid;
+	}
+
+
+/*		.thumbnail-wrappper { width: 250px;} 
+	.thumbnail { position: relative; padding-top: 100%; overflow: hidden; } 
+	.thumbnail .centered { position: absolute; top: 0; left: 0; right: 0; bottom: 0; -webkit-transform: translate(50%,50%); -ms-transform: translate(50%,50%); transform: translate(50%,50%); }  
+	.thumbnail .centered img { position: absolute; top: 0; left: 0; max-width: 100%; height: auto; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%); } */
+</style>
+
+<div class = 'Outline'>
+	<br/>
+	<div class = 'title01'>
+	[VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick Prepasted Wallpaper 19.6 Inch By 9.8 Ft</div>
+
+	<fieldset class="bulletin">
+		<legend><p class="field">Bullet Point</p></legend>
+		♥ Self Adhesive Vinyl, Can be applied to the majority of flat surfaces <br/>
+		♥ Product packaging : Core tube insert, Transparent Vinyl Wrap <br/>
+		♥ Water proof, Easy to clean <br/>
+		♥ Comes on a 19.6" x 118" roll <br/>
+		♥ Size : 19.6 X 118 inch , Thickness 0.15mm , Material : PVC <br/>
+	</fieldset>
+
+
+	<br/><br/>
+	<p style = 'font-family: verdana;	font-size: 20px;'> click on image to view larger </p><br/><br/>
+
+	img01 <br/>
+	<div style="overflow:hidden; margin: 0 auto;">
+		<div class = "imgsrc01" >
+			<a href = 'https://goo.gl/Y532X4'><img src = 'https://goo.gl/Y532X4' width=100% height=auto ></a>
+		</div>
+	</div>
+
+	img02 <br/>
+	<div style="overflow:hidden; margin: 0 auto; background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/cream_pixels.png);"">
+		<div class = "imgsrc02" >
+			<a href = 'https://goo.gl/Y532X4'><img src = 'https://goo.gl/Y532X4' width=100% height=auto ></a>
+		</div>
+		<div class = "imgsrc02" >
+			<a href = 'https://goo.gl/bxK3j1'><img src = 'https://goo.gl/bxK3j1' width=100% height=auto ></a>
+		</div>
+	</div>
+
+	img03 <br/>
+	<div style="overflow:hidden; margin: 0 auto;">
+		<div class = "imgsrc03" >
+			<a href = 'https://goo.gl/Y532X4'><img src = 'https://goo.gl/Y532X4' width=100% height=auto ></a>
+		</div>
+		<div class = "imgsrc03" >
+			<a href = 'https://goo.gl/bxK3j1'><img src = 'https://goo.gl/bxK3j1' width=100% height=auto ></a>
+		</div>
+		<div class = "imgsrc03" >
+			<a href = 'https://goo.gl/kf6B8c'><img src = 'https://goo.gl/kf6B8c' width=100% height=auto ></a>
+		</div>
+	</div>
+	<div style="overflow:hidden; align: center;">
+		<div class = "imgsrc03" >
+			<a href = 'https://goo.gl/9CHU1E'><img src = 'https://goo.gl/9CHU1E' width=100% height=auto > </a>
+		</div>
+		<div class = "imgsrc03" >
+			<a href = 'https://goo.gl/ycnie4'><img src = 'https://goo.gl/ycnie4' width=100% height=auto ></a>
+		</div>
+		<div class = "imgsrc03" >
+			<a href = 'https://goo.gl/8D47YY'><img src = 'https://goo.gl/8D47YY' width=100% height=auto ></a>
+		</div>
+	</div>
+
+		
+	<br/><br/>
+
+
+	<fieldset class="round-box">
+		<legend><p class="field">Item Descriptions</p></legend>
+		Ideal for covering shelves and drawers Quick and economical solution to freshening up surfaces
+		하하하<br/>
+		overing shelves and drawers Quick and economical solution to freshening up surfaces </br>
+		rawers Quick and economical</br>
+	</fieldset>
+	<br/>
+	<fieldset class="round-box">
+		<legend><p class="field">Customer Reviews</p></legend>
+		<span class='stars'>★★★★</span><br>Ideal for covering shelves and drawers Quick and economical solution to freshening up surfaces
+		하하하
+		Ideal for covering shelves and drawers Quick and economical solution to freshening up surfaces
+		하하하<br/>
+		overing shelves and drawers Quick and economical solution to freshening up surfaces </br>
+		rawers Quick and economical</br>
+	</fieldset>
+
+	<br/><br/><br/>
+
+	<div class = 'title02' >
+	Option01: VBS705-05(High Glossy)
+	</div>
+	<div class = 'title03' >
+	Option02: Grey Marble(6.5ft)
+	</div>
+	<div class = 'title04' >
+	Option03: VBS841(white)
+	</div>
+	<div class = 'title05' >
+	Option04: HSV631
+	</div>
+	<div class = 'title06' >
+	Option01: VBS705-05(High Glossy)
+	</div>
+	<div class = 'title07' >
+	Option04: HSV631
+	</div>
+
+
+
+	<div class = 'Opt01' style = " background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/cream_pixels.png);">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>
+	<div class = 'Opt01' style = "background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/round.png);">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>
+	<div class = 'Opt01' style = "background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/intersection.png);">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>
+	<div class = 'Opt01' style = "background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/regal.png);">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>
+	<div class = 'Opt01' style = "background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/doodles.png');">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>
+	<div class = 'Opt01' style = "background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/memphis-colorful.png');">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>
+	<div class = 'Opt01' style = "background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/leather_1.png');">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>	
+	<div class = 'Opt01' style = "background: url('https://www.toptal.com/designers/subtlepatterns/patterns/skyscraper.png');">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>	
+	<div class = 'Opt01' style = "background: url('https://www.toptal.com/designers/subtlepatterns/patterns/roughcloth.png');">
+	Option01: [VBS] Vintage Brick Pattern Contact Paper Self-adhesive Peel-stick
+	</div>	
+	
+	<br/><br/>
+
+
+	<div><img src="http://gi.esmplus.com/donald41s/Shipping_Information_Qoo10_Bottom.jpg"></div>
+
+</div>
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108235443-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108235443-1');
+</script>
+
+
+</body>
+</html>
+
+<!--
+
+	div.box1 {
+		display: inline-block;
+		background-color: black;
+		border-radius: 7px 0 0 7px;
+		color: white;
+		width: 30px;
+		height: 30px;
+		margin: 0;
+		padding: 0;
+	}
+
+	div.box2 {
+		display: inline-block;
+		background-color: blue;
+		border-radius: 0 7px 7px 0;
+		border: 1px;
+		border-color: black
+		width: 700px;
+		height: 30px;
+		margin: 0;
+		padding: 0;
+	}
+
+
+	<div class="box1">
+		01
+	</div>
+	<div class="box2">
+Product Details
+	</div>
+-->
